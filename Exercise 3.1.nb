@@ -1,0 +1,196 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7648,        188]
+NotebookOptionsPosition[      7220,        172]
+NotebookOutlinePosition[      7565,        187]
+CellTagsIndexPosition[      7522,        184]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "l1", ",", "l2", ",", "l3", ",", "t", ",", "T1", ",", "T2", ",", "T3", 
+       ",", "node"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"l1", "=", "10"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"l2", "=", "20"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"l3", "=", "30"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"t", "=", "1"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"T1", "=", 
+       RowBox[{"RotationTransform", "[", 
+        RowBox[{"theta1", ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"T2", "=", 
+       RowBox[{"T1", ".", 
+        RowBox[{"TranslationTransform", "@", 
+         RowBox[{"{", 
+          RowBox[{"l1", ",", "0", ",", "0"}], "}"}]}], ".", 
+        RowBox[{"RotationTransform", "[", 
+         RowBox[{"theta2", ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"T3", "=", 
+       RowBox[{"T2", ".", 
+        RowBox[{"TranslationTransform", "@", 
+         RowBox[{"{", 
+          RowBox[{"l2", ",", "0", ",", "0"}], "}"}]}], ".", 
+        RowBox[{"RotationTransform", "[", 
+         RowBox[{"theta3", ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], "]"}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"node", "[", "l_", "]"}], ":=", 
+       RowBox[{"Cylinder", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"l", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", "t"}], 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Graphics3D", "[", 
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"GeometricTransformation", "[", 
+           RowBox[{
+            RowBox[{"node", "@", "l1"}], ",", "T1"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"GeometricTransformation", "[", 
+           RowBox[{
+            RowBox[{"node", "@", "l2"}], ",", "T2"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"GeometricTransformation", "[", 
+           RowBox[{
+            RowBox[{"node", "@", "l3"}], ",", "T3"}], "]"}]}], 
+         "\[IndentingNewLine]", "}"}], ",", 
+        RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{"theta1", ",", "0", ",", 
+     RowBox[{"Pi", "/", "4"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"theta2", ",", "0", ",", 
+     RowBox[{"Pi", "/", "4"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"theta3", ",", "0", ",", 
+     RowBox[{"Pi", "/", "4"}]}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[20]:=",ExpressionUUID->"dbd88739-f0dc-4878-b711-576e7df4713c"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`theta1$$ = 0., $CellContext`theta2$$ = 
+    0.2905973204570559, $CellContext`theta3$$ = 0.2324778563656447, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`theta1$$], 0, Rational[1, 4] Pi}, {
+      Hold[$CellContext`theta2$$], 0, Rational[1, 4] Pi}, {
+      Hold[$CellContext`theta3$$], 0, Rational[1, 4] Pi}}, Typeset`size$$ = {
+    360., {86., 91.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`theta1$27827$$ = 
+    0, $CellContext`theta2$27828$$ = 0, $CellContext`theta3$27829$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`theta1$$ = 0, $CellContext`theta2$$ = 
+        0, $CellContext`theta3$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`theta1$$, $CellContext`theta1$27827$$, 0], 
+        Hold[$CellContext`theta2$$, $CellContext`theta2$27828$$, 0], 
+        Hold[$CellContext`theta3$$, $CellContext`theta3$27829$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`l1$, $CellContext`l2$, $CellContext`l3$, \
+$CellContext`t$, $CellContext`T1$, $CellContext`T2$, $CellContext`T3$, \
+$CellContext`node$}, $CellContext`l1$ = 10; $CellContext`l2$ = 
+         20; $CellContext`l3$ = 30; $CellContext`t$ = 1; $CellContext`T1$ = 
+         RotationTransform[$CellContext`theta1$$, {0, 0, 
+           1}]; $CellContext`T2$ = Dot[$CellContext`T1$, 
+           TranslationTransform[{$CellContext`l1$, 0, 0}], 
+           
+           RotationTransform[$CellContext`theta2$$, {0, 0, 
+            1}]]; $CellContext`T3$ = Dot[$CellContext`T2$, 
+           TranslationTransform[{$CellContext`l2$, 0, 0}], 
+           
+           RotationTransform[$CellContext`theta3$$, {0, 0, 
+            1}]]; $CellContext`node$[
+           Pattern[$CellContext`l$, 
+            Blank[]]] := 
+         Cylinder[{{0, 0, 0}, {$CellContext`l$, 0, 0}}, $CellContext`t$]; 
+        Graphics3D[{
+           GeometricTransformation[
+            $CellContext`node$[$CellContext`l1$], $CellContext`T1$], 
+           GeometricTransformation[
+            $CellContext`node$[$CellContext`l2$], $CellContext`T2$], 
+           GeometricTransformation[
+            $CellContext`node$[$CellContext`l3$], $CellContext`T3$]}, Boxed -> 
+          False]], 
+      "Specifications" :> {{$CellContext`theta1$$, 0, Rational[1, 4] 
+         Pi}, {$CellContext`theta2$$, 0, Rational[1, 4] 
+         Pi}, {$CellContext`theta3$$, 0, Rational[1, 4] Pi}}, "Options" :> {},
+       "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {161., 167.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.763797477136508*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"a770ff35-9521-4010-ad85-9c7920698d6e"]
+}, Open  ]]
+},
+WindowSize->{919, 1021},
+WindowMargins->{{223, Automatic}, {Automatic, 531}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3081, 78, 333, "Input",ExpressionUUID->"dbd88739-f0dc-4878-b711-576e7df4713c"],
+Cell[3664, 102, 3540, 67, 347, "Output",ExpressionUUID->"a770ff35-9521-4010-ad85-9c7920698d6e"]
+}, Open  ]]
+}
+]
+*)
+

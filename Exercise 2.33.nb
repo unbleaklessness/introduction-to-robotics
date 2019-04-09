@@ -1,0 +1,110 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3119,        102]
+NotebookOptionsPosition[      2695,         86]
+NotebookOutlinePosition[      3040,        101]
+CellTagsIndexPosition[      2997,         98]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Position", "[", 
+       RowBox[{"$Path", ",", 
+        RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}], "===", 
+      RowBox[{"{", "}"}]}], ",", 
+     RowBox[{"AppendTo", "[", 
+      RowBox[{"$Path", ",", 
+       RowBox[{"NotebookDirectory", "[", "]"}]}], "]"}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Needs", "@", "\"\<Functions`\>\""}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "T", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"T", "=", 
+      RowBox[{
+       RowBox[{"matrixTranslation", "[", 
+        RowBox[{"3", ",", "0", ",", "0"}], "]"}], ".", 
+       RowBox[{"matrixXRotation", "[", 
+        RowBox[{"-", "Pi"}], "]"}], ".", 
+       RowBox[{"matrixZRotation", "[", 
+        RowBox[{"Pi", "+", "0.6440265"}], "]"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"T", "//", "MatrixForm"}], "//", "Print"}], ";"}]}], 
+   "\[IndentingNewLine]", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7637974408086843`*^9, 3.763797451843093*^9}, {
+  3.7637979919577446`*^9, 
+  3.763797993129343*^9}},ExpressionUUID->"4021dcd5-6a47-4117-bab7-\
+ef8fe4b3430b"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0", ",", "3"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0", ",", "1"}], "}"}]}], "}"}], ".", 
+   RowBox[{"matrixXRotation", "[", 
+    RowBox[{"-", "\[Pi]"}], "]"}], ".", 
+   RowBox[{"matrixZRotation", "[", "3.785619153589793`", "]"}]}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Print",
+ CellChangeTimes->{3.763797455297309*^9},
+ CellLabel->
+  "During evaluation of \
+In[17]:=",ExpressionUUID->"637724f7-e984-4fec-937b-79946fc3f5c7"]
+}, Open  ]]
+},
+WindowSize->{919, 1021},
+WindowMargins->{{Automatic, 393}, {Automatic, 377}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1339, 38, 162, "Input",ExpressionUUID->"4021dcd5-6a47-4117-bab7-ef8fe4b3430b"],
+Cell[1922, 62, 757, 21, 22, "Print",ExpressionUUID->"637724f7-e984-4fec-937b-79946fc3f5c7"]
+}, Open  ]]
+}
+]
+*)
+
